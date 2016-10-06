@@ -25,7 +25,6 @@ describe('Controls', () => {
       var controls = TestUtils.renderIntoDocument(<Controls countdownStatus="paused"/>);
       var $el = $(ReactDOM.findDOMNode(controls));
       var $startButton = $el.find('button:contains(Start)');
-
       expect($startButton.length).toBe(1);
     });
   });
